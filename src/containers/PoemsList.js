@@ -4,7 +4,7 @@ class PoemsList extends React.Component {
   render() {
     return (
       <div>
-        <h1>Poems List</h1>
+        <h1 className="title">Poems List</h1>
       </div>
     );
   }

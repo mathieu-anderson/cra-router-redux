@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-header {
@@ -28,4 +27,18 @@
 
 .App-header a:hover {
   color: #df0000;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  color: #870505;
+}
+
+.active {
+  color: #870505;
+}
+
+.test {
+  color: blue;
 }
