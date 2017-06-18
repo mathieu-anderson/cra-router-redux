@@ -26,19 +26,11 @@
 }
 
 .App-header a:hover {
-  color: #df0000;
+  color: #870505;
 }
 
 .title {
   text-align: center;
   font-size: 3em;
-  color: #870505;
-}
-
-.active {
-  color: #870505;
-}
-
-.test {
-  color: blue;
+  color: #b10000;
 }

@@ -7,17 +7,17 @@ class Nav extends React.Component {
       <div className="App-header">
         <ul>
           <li>
-            <NavLink exact className="test" activeClassName="active" to="/">
+            <NavLink exact activeStyle={{ color: " #b10000" }} to="/">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink exact activeClassName="active" to="/poems-list">
+            <NavLink exact activeStyle={{ color: " #b10000" }} to="/poems-list">
               Poems list
             </NavLink>
           </li>
           <li>
-            <NavLink exact activeClassName="active" to="/login">
+            <NavLink exact activeStyle={{ color: " #b10000" }} to="/login">
               Login
             </NavLink>
           </li>
