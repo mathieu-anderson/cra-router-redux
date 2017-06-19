@@ -13,8 +13,12 @@ class Nav extends React.Component {
             </NavLink>
           </li>
           <li>
-            <NavLink exact activeStyle={{ color: " #b10000" }} to="/poems-list">
-              Poems list
+            <NavLink
+              exact
+              activeStyle={{ color: " #b10000" }}
+              to="/numbers-list"
+            >
+              Numbers list
             </NavLink>
           </li>
           <li>

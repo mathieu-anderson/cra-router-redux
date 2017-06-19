@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./css/App.css";
 import Home from "./containers/Home";
 import Nav from "./containers/Nav";
-import PoemsList from "./containers/PoemsList";
+import NumbersList from "./containers/NumbersList";
 import Login from "./containers/Login";
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
           <Nav />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/poems-list" component={PoemsList} />
+            <Route exact path="/numbers-list" component={NumbersList} />
             <Route exact path="/login" component={Login} />
             <Route
               render={() => {

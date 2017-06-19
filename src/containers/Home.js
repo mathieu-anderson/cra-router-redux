@@ -13,13 +13,16 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h1 className="title">Welcome</h1>
         <h3>Mapped state :</h3>
+        <button onClick={this.addOne.bind(this)}>
+          Add 1
+        </button>
         <ul>
           {this.props.numbers.map((item, index) => {
             return (
-              <li key={index}>
+              <li key={index} style={{ listStyleType: "none" }}>
                 {item}
                 {/* <button onClick={this.deleteNumber.bind(this)}>
                   x
@@ -28,9 +31,7 @@ class Home extends React.Component {
             );
           })}
         </ul>
-        <button onClick={this.addOne.bind(this)}>
-          Add 1
-        </button>
+
       </div>
     );
   }
