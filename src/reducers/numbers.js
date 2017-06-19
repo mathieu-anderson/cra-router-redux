@@ -1,7 +1,7 @@
 module.exports = function(state = null, action) {
   switch (action.type) {
-    case "TEST":
-      return state.concat([action.text]);
+    case "ADD_ONE":
+      return state.test.concat([action.text]);
 
     default:
       return state;

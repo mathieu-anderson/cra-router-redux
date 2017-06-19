@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from "redux";
 import rootReducer from "./reducers";
 
 const initialState = {
-  test: [1, 2, 3]
+  numbers: [1, 2, 3]
 };
 const enhancers = [];
 // const middleware = [];

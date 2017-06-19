@@ -8,7 +8,7 @@ class Home extends React.Component {
         <h1 className="title">Welcome</h1>
         <h3>Mapped state :</h3>
         <ul>
-          {this.props.test.map((item, index) => {
+          {this.props.numbers.map((item, index) => {
             return (
               <li key={index}>
                 {item}
