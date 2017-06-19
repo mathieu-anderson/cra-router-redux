@@ -2,6 +2,15 @@ import React from "react";
 import { connect } from "react-redux";
 
 class Home extends React.Component {
+  addOne() {
+    const nextNumber = this.props.numbers.length + 1;
+    this.props.dispatch({ type: "ADD_NUMBER", number: nextNumber });
+  }
+
+  // deleteNumber() {
+  //   console.log();
+  // }
+
   render() {
     return (
       <div>
@@ -12,11 +21,14 @@ class Home extends React.Component {
             return (
               <li key={index}>
                 {item}
+                {/* <button onClick={this.deleteNumber.bind(this)}>
+                  x
+                </button> */}
               </li>
             );
           })}
         </ul>
-        <button>
+        <button onClick={this.addOne.bind(this)}>
           Add 1
         </button>
       </div>
