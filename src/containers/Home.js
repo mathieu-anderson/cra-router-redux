@@ -1,9 +1,31 @@
 import React from "react";
+import { connect } from "react-redux";
 
 class Home extends React.Component {
   render() {
-    return <h1 className="title">Welcome</h1>;
+    return (
+      <div>
+        <h1 className="title">Welcome</h1>
+        <h3>Mapped state :</h3>
+        <ul>
+          {this.props.test.map(item => {
+            return (
+              <li>
+                {item}
+              </li>
+            );
+          })}
+        </ul>
+        <button>
+          Add 1
+        </button>
+      </div>
+    );
   }
 }
 
-export default Home;
+function mapStateToProps(state) {
+  return state;
+}
+
+export default connect(mapStateToProps)(Home);
