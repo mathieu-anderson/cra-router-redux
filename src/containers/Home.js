@@ -1,37 +1,32 @@
 import React from "react";
 import { connect } from "react-redux";
+import RenderItems from "../components/RenderItems";
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.addOne = this.addOne.bind(this);
+  }
+
   addOne() {
     const nextNumber = this.props.numbers.length + 1;
     this.props.dispatch({ type: "ADD_NUMBER", number: nextNumber });
   }
 
-  // deleteNumber() {
-  //   console.log();
-  // }
-
   render() {
+    const { addOne } = this;
+    const { numbers } = this.props;
+
     return (
       <div style={{ textAlign: "center" }}>
         <h1 className="title">Welcome</h1>
         <h3>Mapped state :</h3>
-        <button onClick={this.addOne.bind(this)}>
+        <button onClick={addOne}>
           Add 1
         </button>
         <ul>
-          {this.props.numbers.map((item, index) => {
-            return (
-              <li key={index} style={{ listStyleType: "none" }}>
-                {item}
-                {/* <button onClick={this.deleteNumber.bind(this)}>
-                  x
-                </button> */}
-              </li>
-            );
-          })}
+          <RenderItems items={numbers} />
         </ul>
-
       </div>
     );
   }
