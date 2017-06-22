@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import RenderItems from "../components/RenderItems";
+import RenderItems from "../presentational/RenderItems";
 
 class NumbersList extends React.Component {
   render() {

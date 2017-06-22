@@ -15,9 +15,12 @@ class RenderItems extends React.Component {
   }
 
   render() {
+    const { items } = this.props;
+    const { mapItems } = this;
+
     return (
       <div>
-        {this.props.items.map(this.mapItems)}
+        {items.map(mapItems)}
       </div>
     );
   }
