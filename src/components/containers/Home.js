@@ -33,7 +33,7 @@ class Home extends React.Component {
 }
 
 function mapStateToProps(state) {
-  return state;
+  return { numbers: state.numbers };
 }
 
 export default connect(mapStateToProps)(Home);
