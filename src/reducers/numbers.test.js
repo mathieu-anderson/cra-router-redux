@@ -3,7 +3,7 @@ import numbers from "./numbers";
 const initialState = [1, 2, 3];
 
 it("should return the initial state", () => {
-  expect(numbers().toEqual(initialState));
+  expect(numbers(initialState, { type: "ADD_NUMBER" }).toEqual(initialState));
 });
 
 it("should add the specified number to the numbers array", () => {
